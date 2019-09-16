@@ -16,16 +16,5 @@ int main(int argc, char const *argv[])
 	{
 			printf("The given number is prime\n");
 	}
-	for(int i=0;i<3;++i){
-		int cat = inp%10;
-		temp=temp+(cat*cat*cat);
-		inp/=10;
-	}
-	if (temp==cpy)
-	{
-		printf("The given number is Armstrong\n");
-	}
-	else
-		printf("The given number is not Armstrong\n");
 	return 0;
 }
