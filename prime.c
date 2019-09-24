@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 	scanf("%d",&inp);
 	cpy=inp;
 	for(int i=2;i<cpy/2;++i){
-		if(cpy%2==0){
+		if(cpy%i==0){
 			printf("The given number is not prime\n");
 			sema=1;			
 			break;
