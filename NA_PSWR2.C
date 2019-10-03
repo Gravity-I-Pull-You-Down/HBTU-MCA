@@ -1,11 +1,9 @@
 #include<stdio.h>
-#include<conio.h>
 #include<string.h>
 void main()
 {
 char st[80],ch,st1[80];
 int i=0,c=3,j,a,b;
-clrscr();
 printf("CREATE PASSWORD \n");
 while((ch=getch())!=13)
 {
@@ -36,7 +34,6 @@ c--;
 if(c==0)
 {
 printf("\nALL YOUR CHANCES ARE OVER, GO AND SLEEP \n");
-getch();
 exit(0);
 }
 else
@@ -45,6 +42,5 @@ printf("\nYOU HAVE ONLY %d CHANCE LEFT FOR GIVING CORRECT PASSWORD \n",c);
 goto print;
 }
 }
-getch();
 }
 
