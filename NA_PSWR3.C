@@ -1,12 +1,10 @@
 #include<stdio.h>
-#include<conio.h>
 #include<string.h>
 void main()
 {
 int i,j,k,a,b,c,l,p;
 char st[80],ch,ch1,st1[80],st2[80],st3[80];
 print:
-clrscr();
 printf("CREATE PASSWORD \n");
 i=0;
 j=0;
@@ -29,15 +27,14 @@ st1[j]='\0';
 if(strcmp(st,st1)==0)
 {
 printf("\nCONGRATULATIONS NEW PASSWORD HAS BEEN CREATED \n");
-getch();
+
 }
 else
 {
 printf("\nPASSWORD DIDN'T MATCH \nPLEASE TRY AGAIN... \n");
-getch();
+
 goto print;
 }
-clrscr();
 print2:
 k=0;
 printf("\nENTER PASSWORD TO ENTER IN PROGRAM \n");
@@ -60,7 +57,7 @@ c--;
 if(c==0)
 {
 printf("\nALL YOUR CHANCES ARE OVER, GO AND SLEEP \n");
-getch();
+
 exit(0);
 }
 else
@@ -69,8 +66,7 @@ printf("\nYOU HAVE ONLY %d CHANCE LEFT FOR GIVING CORRECT PASSWORD \n",c);
 goto print2;
 }
 }
-getch();
-clrscr();
+
 p=3;
 printf("\nDO YOU WANT TO CHANGE THE PASSWORD & CONTINUE AGAIN\nOR YOU WANT TO CONTINUE AGAIN WITH THE OLD PASSWORD\nPRESS N FOR NEW PASSWORD\nPRESS O FOR OLD PASSWORD\nPRESS E FOR EXIT  \n");
 ch1=getche();
@@ -94,7 +90,7 @@ p--;
 if(p==0)
 {
 printf("\nALL YOUR CHANCES ARE OVER, GO AND SLEEP \n");
-getch();
+
 exit(0);
 }
 else
@@ -108,5 +104,5 @@ if(ch1=='o'||ch1=='O')
 goto print2;
 if(ch1=='e'||ch1=='E')
 exit(0);
-getch();
+
 }
