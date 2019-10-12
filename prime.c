@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
+	printf("Roll no 190231077\n");
 	int inp,cpy,temp=0,sema=0;
 	printf("Enter a number: ");
 	scanf("%d",&inp);

@@ -2,6 +2,7 @@
 #include<string.h>
 int main(int argc, char const *argv[])
 {
+	printf("Roll no 190231077\n");
 	char string[50];
 	int i =0,j;
 	printf("Enter the string\n");
