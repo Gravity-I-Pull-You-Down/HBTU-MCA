@@ -1,0 +1,56 @@
+bool sudoku2(std::vector<std::vector<char>> grid) {
+    using namespace std;
+//Rows Checked HERE-----------------------------------------------------//
+    for(int i =0 ;i<9;++i){
+        int array[] = {0,0,0,0,0,0,0,0,0,0};
+        for(int j=0; j<9;++j){
+            if (grid[i][j]!='.') {
+                ++array[(int)grid[i][j]-48];
+                if(array[(int)grid[i][j]-48]>1){
+                cout<<array[(int)grid[i][j] - 48]<<endl;
+                cout<<(int)grid[i][j] - 48<<"Upper"<<i<<" "<<j;
+                return false;
+                }
+                }
+        }
+    }
+    //Col Checked HERE-----------------------------------------------------//
+  
+    for(int i =0 ;i<9;++i){
+        int array[] = {0,0,0,0,0,0,0,0,0,0};
+        for(int j=0; j<9;++j){
+            if (grid[j][i]!='.') {
+                ++array[(int)grid[j][i]-48];
+                if(array[(int)grid[j][i]-48]>1){
+                    
+                cout << grid[j][i]<<"Lower";
+                return false;
+                }
+                }
+        }
+    }
+
+//3X3 Checked HERE-----------------------------------------------------//
+  
+    for(int i  = 0 ; i<3;++i){
+        for(int j = 0; j<3; ++j){
+                int array[] = {0,0,0,0,0,0,0,0,0,0};
+                for(int k = 0+i*3;k<(i*3)+3;++k){
+                  for(int l = 0+j*3;l<(j*3)+3;++l){
+                       if (grid[k][l]!='.') {
+                             ++array[(int)grid[k][l]-48];
+                                 if(array[(int)grid[k][l]-48]>1){
+                                    cout<<array[(int)grid[k][l] - 48]<<endl;
+                                    cout<<(int)grid[k][l] - 48<<" 3X3 "<<k<<" "<<l;
+                                    return false;
+                                    }
+                                }
+        }
+    }
+    }
+
+}
+cout<<"Reached here";
+
+return true;
+    }
