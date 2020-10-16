@@ -1,14 +1,21 @@
 #include <stdio.h>
-int main(int argc, char const *argv[])
+#include <math.h>
+int area(radius);
+int main()
 {
-	printf("Roll no 190231077\n");
+
 	int radius;
-	float pi=3.14,area;
+	float a;
 
 	printf("Enter the radius of circle \n");
 	scanf("%d",&radius);
-	area = pi * radius *radius;
+	area(radius);
 	printf("area of circle is %f \n",area );
-
-	return 0;
+        getch();
+}
+int area(int radius)
+{
+	int a;
+	a = 3.14*radius*radius;
+	return a;
 }
